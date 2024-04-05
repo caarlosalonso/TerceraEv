@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37ac1d2a-a82e-46aa-96b0-55ff628b3cd7" name="Changes" comment="tercera evaluacion">
-      <change afterPath="$PROJECT_DIR$/herencia/herencia.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/herencia/src/Currito.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/herencia/src/Empleado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/herencia/src/Jefe.java" afterDir="false" />
+    <list default="true" id="37ac1d2a-a82e-46aa-96b0-55ff628b3cd7" name="Changes" comment="04/04/2024">
+      <change afterPath="$PROJECT_DIR$/herenciaVehiculo/herenciaVehiculo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/herenciaVehiculo/src/Turismo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/herenciaVehiculo/src/Vehiculo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/herencia/herencia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/herenciaEmpleado/herenciaEmpleado.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/herencia/src/Currito.java" beforeDir="false" afterPath="$PROJECT_DIR$/herenciaEmpleado/src/Currito.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/herencia/src/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/herenciaEmpleado/src/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/herencia/src/EmpleadoMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/herenciaEmpleado/src/EmpleadoMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/herencia/src/Jefe.java" beforeDir="false" afterPath="$PROJECT_DIR$/herenciaEmpleado/src/Jefe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +50,7 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "corretto-1.8",
     "last_opened_file_path": "C:/Users/frasq/IdeaProjects/TerceraEv/test/src",
-    "onboarding.tips.debug.path": "C:/Users/frasq/IdeaProjects/TerceraEv/herencia/src/Main.java"
+    "onboarding.tips.debug.path": "C:/Users/frasq/IdeaProjects/TerceraEv/herenciaVehiculo/src/Main.java"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -57,7 +61,7 @@
   <component name="RunManager">
     <configuration name="EmpleadoMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="EmpleadoMain" />
-      <module name="herencia" />
+      <module name="herenciaEmpleado" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -85,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710845465204</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="04/04/2024">
+      <option name="closed" value="true" />
+      <created>1712305693012</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712305693012</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,6 +113,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tercera evaluacion" />
-    <option name="LAST_COMMIT_MESSAGE" value="tercera evaluacion" />
+    <MESSAGE value="04/04/2024" />
+    <option name="LAST_COMMIT_MESSAGE" value="04/04/2024" />
   </component>
 </project>
