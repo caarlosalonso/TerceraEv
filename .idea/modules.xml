@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TerceraEv.iml" filepath="$PROJECT_DIR$/TerceraEv.iml" />
       <module fileurl="file://$PROJECT_DIR$/dni/dni.iml" filepath="$PROJECT_DIR$/dni/dni.iml" />
+      <module fileurl="file://$PROJECT_DIR$/herencia/herencia.iml" filepath="$PROJECT_DIR$/herencia/herencia.iml" />
       <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
     </modules>
   </component>
