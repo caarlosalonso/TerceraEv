@@ -5,12 +5,11 @@ public class Turismo extends Vehiculo{
     private int kmDevolucion;
 
     //Constructores
-
-
-    public Turismo(String matricula, double precioKm, int kmAlquiler) {
+    public Turismo(String matricula, double precioKm, int kmAlquiler, int kmDevolucion) {
         super(matricula);
         this.precioKm = precioKm;
         this.kmAlquiler = kmAlquiler;
+        this.kmDevolucion = kmDevolucion;
     }
 
     //Metodos
@@ -24,7 +23,7 @@ public class Turismo extends Vehiculo{
     }
     @Override
     public void devolver(int dato){
-
+        kmDevolucion = dato;
     }
 
     @Override

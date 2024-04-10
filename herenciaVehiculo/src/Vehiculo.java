@@ -1,7 +1,7 @@
 public abstract class Vehiculo {
     //Atributos
     protected String matricula;
-    protected boolean alquilado;
+    private boolean alquilado;
 
     //Constructores
     public Vehiculo(String matricula) {

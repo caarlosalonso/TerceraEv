@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37ac1d2a-a82e-46aa-96b0-55ff628b3cd7" name="Changes" comment="04/04/2024">
-      <change afterPath="$PROJECT_DIR$/herenciaVehiculo/herenciaVehiculo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/herenciaVehiculo/src/Turismo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/herenciaVehiculo/src/Vehiculo.java" afterDir="false" />
+    <list default="true" id="37ac1d2a-a82e-46aa-96b0-55ff628b3cd7" name="Changes" comment="05/04/2024">
+      <change afterPath="$PROJECT_DIR$/herenciaVehiculo/src/Camion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intefaces/intefaces.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intefaces/src/Circulo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intefaces/src/Cuadrado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intefaces/src/Triangulo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intefaces/src/figuraGeometrica.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/herencia/herencia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/herenciaEmpleado/herenciaEmpleado.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/herencia/src/Currito.java" beforeDir="false" afterPath="$PROJECT_DIR$/herenciaEmpleado/src/Currito.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/herencia/src/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/herenciaEmpleado/src/Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/herencia/src/EmpleadoMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/herenciaEmpleado/src/EmpleadoMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/herencia/src/Jefe.java" beforeDir="false" afterPath="$PROJECT_DIR$/herenciaEmpleado/src/Jefe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/herenciaVehiculo/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/herenciaVehiculo/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/herenciaVehiculo/src/Turismo.java" beforeDir="false" afterPath="$PROJECT_DIR$/herenciaVehiculo/src/Turismo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/herenciaVehiculo/src/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/herenciaVehiculo/src/Vehiculo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,17 +43,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "corretto-1.8",
-    "last_opened_file_path": "C:/Users/frasq/IdeaProjects/TerceraEv/test/src",
-    "onboarding.tips.debug.path": "C:/Users/frasq/IdeaProjects/TerceraEv/herenciaVehiculo/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/frasq/IdeaProjects/TerceraEv/test/src&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/frasq/IdeaProjects/TerceraEv/intefaces/src/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\frasq\IdeaProjects\TerceraEv\test\src" />
@@ -97,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712305693012</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="05/04/2024">
+      <option name="closed" value="true" />
+      <created>1712314137563</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712314137563</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +123,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tercera evaluacion" />
     <MESSAGE value="04/04/2024" />
-    <option name="LAST_COMMIT_MESSAGE" value="04/04/2024" />
+    <MESSAGE value="05/04/2024" />
+    <option name="LAST_COMMIT_MESSAGE" value="05/04/2024" />
   </component>
 </project>
