@@ -1,4 +1,4 @@
-public class Cuadrado implements figuraGeometrica{
+public class Cuadrado implements FiguraGeometrica{
     //Atributos
     private int lado;
 

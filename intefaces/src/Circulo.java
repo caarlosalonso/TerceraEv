@@ -1,4 +1,4 @@
-public class Circulo implements figuraGeometrica{
+public class Circulo implements FiguraGeometrica{
     //Atributos
     private int radio;
     //Constructor

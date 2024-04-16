@@ -4,18 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37ac1d2a-a82e-46aa-96b0-55ff628b3cd7" name="Changes" comment="05/04/2024">
-      <change afterPath="$PROJECT_DIR$/herenciaVehiculo/src/Camion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intefaces/intefaces.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intefaces/src/Circulo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intefaces/src/Cuadrado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intefaces/src/Triangulo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intefaces/src/figuraGeometrica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="37ac1d2a-a82e-46aa-96b0-55ff628b3cd7" name="Changes" comment="10/04/2024 LT">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/herenciaVehiculo/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/herenciaVehiculo/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/herenciaVehiculo/src/Turismo.java" beforeDir="false" afterPath="$PROJECT_DIR$/herenciaVehiculo/src/Turismo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/herenciaVehiculo/src/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/herenciaVehiculo/src/Vehiculo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712314137563</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="10/04/2024 LT">
+      <option name="closed" value="true" />
+      <created>1712737210357</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712737210357</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,6 +122,7 @@
     <MESSAGE value="tercera evaluacion" />
     <MESSAGE value="04/04/2024" />
     <MESSAGE value="05/04/2024" />
-    <option name="LAST_COMMIT_MESSAGE" value="05/04/2024" />
+    <MESSAGE value="10/04/2024 LT" />
+    <option name="LAST_COMMIT_MESSAGE" value="10/04/2024 LT" />
   </component>
 </project>
