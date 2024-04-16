@@ -23,7 +23,8 @@ public class Main {
 
         //Bucle for in que muestre las figuras
         for (FiguraGeometrica figura : figuras){
-            System.out.println(figura);
+            figura.mostrarArea();
+            figura.mostrarPerimetro();
         }
     }
 }
