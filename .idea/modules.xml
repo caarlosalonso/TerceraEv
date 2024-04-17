@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TerceraEv.iml" filepath="$PROJECT_DIR$/TerceraEv.iml" />
       <module fileurl="file://$PROJECT_DIR$/dni/dni.iml" filepath="$PROJECT_DIR$/dni/dni.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestionEntradas/gestionEntradas.iml" filepath="$PROJECT_DIR$/gestionEntradas/gestionEntradas.iml" />
       <module fileurl="file://$PROJECT_DIR$/herenciaEmpleado/herenciaEmpleado.iml" filepath="$PROJECT_DIR$/herenciaEmpleado/herenciaEmpleado.iml" />
       <module fileurl="file://$PROJECT_DIR$/herenciaVehiculo/herenciaVehiculo.iml" filepath="$PROJECT_DIR$/herenciaVehiculo/herenciaVehiculo.iml" />
       <module fileurl="file://$PROJECT_DIR$/intefaces/intefaces.iml" filepath="$PROJECT_DIR$/intefaces/intefaces.iml" />
