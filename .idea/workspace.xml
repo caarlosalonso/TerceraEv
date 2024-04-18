@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37ac1d2a-a82e-46aa-96b0-55ff628b3cd7" name="Changes" comment="17/04/2024 LT">
-      <change afterPath="$PROJECT_DIR$/gestionAmigos/gestionAmigos.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestionEntradas/src/Entrada.java" beforeDir="false" afterPath="$PROJECT_DIR$/gestionEntradas/src/Entrada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestionEntradas/src/Grada.java" beforeDir="false" afterPath="$PROJECT_DIR$/gestionEntradas/src/Grada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestionEntradas/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/gestionEntradas/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestionEntradas/src/Pista.java" beforeDir="false" afterPath="$PROJECT_DIR$/gestionEntradas/src/Pista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestionEntradas/src/Vip.java" beforeDir="false" afterPath="$PROJECT_DIR$/gestionEntradas/src/Vip.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,11 +38,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.EmpleadoMain.executor": "Run",
+    "Application.Main.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "corretto-1.8",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/frasq/IdeaProjects/TerceraEv/test/src",
     "onboarding.tips.debug.path": "C:/Users/frasq/IdeaProjects/TerceraEv/gestionAmigos/src/Main.java"
   }
@@ -69,6 +68,13 @@
         <item itemvalue="Application.EmpleadoMain" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-ae57be32" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -165,6 +171,19 @@
           <url>file://$PROJECT_DIR$/gestionAmigos/src/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.ConcurrentModificationException" package="java.util" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/gestionEntradas/src/Main.java</url>
+          <line>62</line>
+          <properties class="Main" method="numeroEntradas">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

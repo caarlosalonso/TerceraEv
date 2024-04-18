@@ -5,7 +5,7 @@ public class Pista extends Entrada{
     static final int LIMITE_PISTA=2900;
 
     //Metodos
-    public Pista() {
+    public Pista(String TIPO_ENTRADA) {
       super ("PISTA");
     }
 }
