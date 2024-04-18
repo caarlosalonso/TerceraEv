@@ -10,7 +10,7 @@ public class Grada extends Entrada{
     static final int LIMITE_SUR=3000;
 
     //Metodos
-    public Grada(LocalDateTime fechaHoraCompra, String correo, boolean estaVendida) {
-        super(fechaHoraCompra, correo, estaVendida);
+    public Grada(String TIPO_ENTRADA) {
+        super(TIPO_ENTRADA);
     }
 }

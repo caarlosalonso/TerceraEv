@@ -5,7 +5,7 @@ public class Pista extends Entrada{
     static final int LIMITE_PISTA=2900;
 
     //Metodos
-    public Pista(LocalDateTime fechaHoraCompra, String correo, boolean estaVendida) {
-        super(fechaHoraCompra, correo, estaVendida);
+    public Pista() {
+      super ("PISTA");
     }
 }
