@@ -11,4 +11,9 @@ public class Vip extends Entrada{
     public Vip(String TIPO_ENTRADA) {
         super(TIPO_ENTRADA);
     }
-}
+
+    public static double calculaPrecio() {
+
+        return Entrada.calculaPrecio() + SUPLEMENTO;
+    }
+    }

@@ -17,23 +17,22 @@ public class Main {
         Scanner tecladoLetras = new Scanner(System.in);
         Scanner tecladoNumeros = new Scanner(System.in);
 
-        String entrada;
+        String entradaGenerada;
         String entradaRegex = "VIP|PISTA|GRADA";
 
         do {
             System.out.println("Que tipo de entrada quieres comprar?: ");
-            entrada= tecladoLetras.nextLine().toUpperCase();
+            entradaGenerada= tecladoLetras.nextLine().toUpperCase();
 
-            if (!Pattern.matches(entradaRegex, entrada)) {
+            if (!Pattern.matches(entradaRegex, entradaGenerada)) {
                 System.out.println("Tipo de entrada NO VALIDO!");
             }
-            switch (entrada) {
+            switch (entradaGenerada) {
                 case "VIP":
                     for (int i = 0; i < 3; i++) {
-                        Vip vip = new Vip("VIP");
-                        listaEntradas.add(vip);
-                        System.out.println(vip);
-
+                        Entrada entrada = new Vip("VIP");
+                        listaEntradas.add(entrada);
+                        System.out.println(entrada);
                     }
                     break;
                 case "PISTA":
@@ -57,7 +56,7 @@ public class Main {
                     }
                     break;
             }
-        }while (!Pattern.matches(entradaRegex, entrada));
+        }while (!Pattern.matches(entradaRegex, entradaGenerada));
 
     }
     public static void numeroEntradas(ArrayList<Entrada> listaEntradas,ArrayList<Entrada> listaEntradasVendidas){
@@ -67,21 +66,41 @@ public class Main {
         System.out.println("Cuantas entradas quieres comprar?: ");
         int numeroEntradas = tecladoNumeros.nextInt();
 
-        for (int i = 0;i<=numeroEntradas;i++){
-        for (Entrada entrada : listaEntradas){
+        for (int i=0;i< numeroEntradas;i++){
+            Entrada entradaAux = listaEntradas.get(0);
 
+            listaEntradasVendidas.add(entradaAux);
+            listaEntradas.remove(entradaAux);
+            entradaAux.setEstaVendida();
+            entradaAux.setCorreo("lkjkjk");
+            entradaAux.setFechaHoraCompra(LocalDateTime.now());
+
+
+        }
+
+
+        System.out.println("Disponibles");
+        System.out.println(listaEntradas);
+        System.out.println("Vendidas");
+        System.out.println(listaEntradasVendidas);
+
+/*
+        for (Entrada entrada : listaEntradas) {
+
+            if (!entrada.isEstaVendida()) {
                 entrada.setEstaVendida();
+
                 listaEntradasVendidas.add(entrada);
             }
-
         }
         for (Entrada entrada : listaEntradasVendidas){
             System.out.println(entrada);
         }
+*/
 
+        //System.out.println(Entrada.calculaPrecio(numeroEntradas));
+        double total = numeroEntradas * Entrada.calculaPrecio();
 
-
-        System.out.println(Entrada.calculaPrecio(numeroEntradas));
 
     }
 }
