@@ -8,8 +8,8 @@ public class Vip extends Entrada{
     static final int LIMITE_VIP=100;
 
     //Metodos
-    public Vip(String TIPO_ENTRADA) {
-        super(TIPO_ENTRADA);
+    public Vip() {
+        super("VIP");
     }
 
     public static double calculaPrecio() {

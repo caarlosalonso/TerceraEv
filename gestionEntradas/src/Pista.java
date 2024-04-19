@@ -7,7 +7,7 @@ public class Pista extends Entrada{
 
 
     //Metodos
-    public Pista(String TIPO_ENTRADA) {
+    public Pista() {
       super ("PISTA");
     }
 
