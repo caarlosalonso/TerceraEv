@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37ac1d2a-a82e-46aa-96b0-55ff628b3cd7" name="Changes" comment="19/04/2024 LT">
+    <list default="true" id="37ac1d2a-a82e-46aa-96b0-55ff628b3cd7" name="Changes" comment="19/04/2024 LT myVersion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestionEntradas/src/Entrada.java" beforeDir="false" afterPath="$PROJECT_DIR$/gestionEntradas/src/Entrada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestionEntradas/src/Grada.java" beforeDir="false" afterPath="$PROJECT_DIR$/gestionEntradas/src/Grada.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestionEntradas/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/gestionEntradas/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestionEntradas/src/Pista.java" beforeDir="false" afterPath="$PROJECT_DIR$/gestionEntradas/src/Pista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestionEntradas/src/Vip.java" beforeDir="false" afterPath="$PROJECT_DIR$/gestionEntradas/src/Vip.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713519777663</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="19/04/2024 LT myVersion">
+      <option name="closed" value="true" />
+      <created>1713524261038</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713524261038</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,7 +177,8 @@
     <MESSAGE value="16/04/2024 LT" />
     <MESSAGE value="17/04/2024 LT" />
     <MESSAGE value="19/04/2024 LT" />
-    <option name="LAST_COMMIT_MESSAGE" value="19/04/2024 LT" />
+    <MESSAGE value="19/04/2024 LT myVersion" />
+    <option name="LAST_COMMIT_MESSAGE" value="19/04/2024 LT myVersion" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -180,15 +187,6 @@
           <url>file://$PROJECT_DIR$/gestionAmigos/src/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/gestionEntradas/src/Main.java</url>
-          <line>76</line>
-          <properties class="Main" method="comprarEntradas">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

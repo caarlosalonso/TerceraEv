@@ -21,7 +21,6 @@ public class Main {
                         Entrada entrada = new Vip();
                         listaEntradas.add(entrada);
                         listaEntradasVip.add(entrada);
-                        System.out.println(entrada);
                     }
                     for (int i = 0; i < Pista.LIMITE_PISTA; i++) {
                         Entrada entrada = new Pista();
@@ -44,37 +43,12 @@ public class Main {
                         listaEntradasGrada.add(entrada);
                     }
     }
-    /*
-    public static void comprarEntradas(ArrayList<Entrada> listaEntradas,ArrayList<Entrada> listaEntradasVendidas){
 
-        Scanner tecladoNumeros = new Scanner(System.in);
-
-        System.out.println("Cuantas entradas quieres comprar?: ");
-        int numeroEntradas = tecladoNumeros.nextInt();
-
-        for (int i=0;i< numeroEntradas;i++){
-            Entrada entradaAux = listaEntradas.get(0);
-
-            listaEntradasVendidas.add(entradaAux);
-            listaEntradas.remove(entradaAux);
-            entradaAux.setEstaVendida();
-            entradaAux.setCorreo("lkjkjk");
-            entradaAux.setFechaHoraCompra();
-        }
-
-
-        System.out.println("Disponibles");
-        System.out.println(listaEntradas);
-        System.out.println("Vendidas");
-        System.out.println(listaEntradasVendidas);
-
-        //System.out.println(Entrada.calculaPrecio(numeroEntradas));
-        double total = numeroEntradas * Entrada.calculaPrecio();
-    }
-     */
     public static void comprarEntradas(ArrayList<Entrada> listaEntradas,ArrayList<Entrada> listaEntradasVendidas,ArrayList<Entrada> listaEntradasVip,ArrayList<Entrada> listaEntradasPista,ArrayList<Entrada> listaEntradasGrada){
         Scanner tecladoLetras = new Scanner(System.in);
         Scanner tecladoNumeros = new Scanner(System.in);
+
+        int numeroEntradas;
 
         String entradaGenerada;
         String entradaRegex = "VIP|PISTA|GRADA";
@@ -83,8 +57,18 @@ public class Main {
             System.out.println("Que tipo de entrada quieres comprar?: ");
             entradaGenerada= tecladoLetras.nextLine().toUpperCase();
 
-            System.out.println("Cuantas entradas quieres comprar?: ");
-            int numeroEntradas = tecladoNumeros.nextInt();
+
+
+            do {
+                System.out.println("Cuantas entradas quieres comprar?: ");
+                numeroEntradas= tecladoNumeros.nextInt();
+
+                double total = numeroEntradas * Vip.calculaPrecio();
+                System.out.println("El precio total serían: " + total);
+
+            }while (numeroEntradas>20);
+
+            String correo = introducirCorreo();
 
             if (!Pattern.matches(entradaRegex, entradaGenerada)) {
                 System.out.println("Tipo de entrada NO VALIDO!");
@@ -96,15 +80,20 @@ public class Main {
                         listaEntradasVendidas.add(entradaAux); //Añadimos la entradaAuxiliar a la lista de entradas vendidas.
                         listaEntradasVip.remove(entradaAux); //Quitamos la entrada de la lista de entradas Vip, para no volver a asignarla
                         entradaAux.setEstaVendida(); //Marcamos al entrada como vendida con un booleano
-                        entradaAux.setCorreo(introducirCorreo()); //Añadimos el correo al que se va a enviar la entrada
+                        entradaAux.setCorreo(correo); //Añadimos el correo al que se va a enviar la entrada
                         entradaAux.setFechaHoraCompra(); //Añadimos tambien la fecha de compra de la entrada.
-
-                        System.out.println("Vendidas");
-                        System.out.println(listaEntradasVendidas);
                     }
+
+                    System.out.println("Vendidas");
+                    System.out.println(listaEntradasVendidas); //Mostramos las entradas vendidas
+                    System.out.println("Quedan: "+ listaEntradasVip.size() + "entradas vip.");
                     break;
                 case "PISTA":
-
+                    for (int i=0;i<numeroEntradas;i++){
+                        Entrada entradaAux = listaEntradas.get(0);
+                        listaEntradasVendidas.add(entradaAux);
+                        listaEntradasVip.remove(entradaAux);
+                    }
                     break;
                 case "GRADA":
 
@@ -120,7 +109,7 @@ public class Main {
         String correo;
         //String correoRegex = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
         //do {
-            System.out.println("Introduce tu correo electronico: ");
+            System.out.println("Introduce tu correo electronico para confirmar la compra: ");
             correo = teclado.nextLine().toLowerCase();
         //}while (!Pattern.matches(correo,correoRegex));
         return correo;
