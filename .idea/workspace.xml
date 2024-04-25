@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37ac1d2a-a82e-46aa-96b0-55ff628b3cd7" name="Changes" comment="19/04/2024 LT myVersion">
+    <list default="true" id="37ac1d2a-a82e-46aa-96b0-55ff628b3cd7" name="Changes" comment="18/04/2024 DT">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestionEntradas/src/Entrada.java" beforeDir="false" afterPath="$PROJECT_DIR$/gestionEntradas/src/Entrada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestionEntradas/src/Grada.java" beforeDir="false" afterPath="$PROJECT_DIR$/gestionEntradas/src/Grada.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestionEntradas/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/gestionEntradas/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestionEntradas/src/Pista.java" beforeDir="false" afterPath="$PROJECT_DIR$/gestionEntradas/src/Pista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestionEntradas/src/Vip.java" beforeDir="false" afterPath="$PROJECT_DIR$/gestionEntradas/src/Vip.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +24,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -38,11 +39,14 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.EmpleadoMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-1.8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/frasq/IdeaProjects/TerceraEv/test/src&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/frasq/IdeaProjects/TerceraEv/gestionAmigos/src/Main.java&quot;
   }
@@ -52,7 +56,7 @@
       <recent name="C:\Users\frasq\IdeaProjects\TerceraEv\test\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
     <configuration name="EmpleadoMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="EmpleadoMain" />
       <module name="herenciaEmpleado" />
@@ -60,19 +64,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="gestionEntradas" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.EmpleadoMain" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-ae57be32" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -139,23 +142,7 @@
       <option name="project" value="LOCAL" />
       <updated>1713356420501</updated>
     </task>
-    <task id="LOCAL-00008" summary="19/04/2024 LT">
-      <option name="closed" value="true" />
-      <created>1713519777663</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1713519777663</updated>
-    </task>
-    <task id="LOCAL-00009" summary="19/04/2024 LT myVersion">
-      <option name="closed" value="true" />
-      <created>1713524261038</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1713524261038</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,9 +163,7 @@
     <MESSAGE value="10/04/2024 LT" />
     <MESSAGE value="16/04/2024 LT" />
     <MESSAGE value="17/04/2024 LT" />
-    <MESSAGE value="19/04/2024 LT" />
-    <MESSAGE value="19/04/2024 LT myVersion" />
-    <option name="LAST_COMMIT_MESSAGE" value="19/04/2024 LT myVersion" />
+    <option name="LAST_COMMIT_MESSAGE" value="17/04/2024 LT" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -188,6 +173,10 @@
           <line>13</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.ConcurrentModificationException" package="java.util" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

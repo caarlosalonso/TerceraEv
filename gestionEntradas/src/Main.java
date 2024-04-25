@@ -44,7 +44,7 @@ public class Main {
                     }
     }
 
-    public static void comprarEntradas(ArrayList<Entrada> listaEntradas,ArrayList<Entrada> listaEntradasVendidas,ArrayList<Entrada> listaEntradasVip,ArrayList<Entrada> listaEntradasPista,ArrayList<Entrada> listaEntradasGrada){
+    public static void comprarEntradas(ArrayList<Entrada> listaEntradas,ArrayList<Entrada> listaEntradasVendidas,ArrayList<Entrada> listaEntradasVip,ArrayList<Entrada> listaEntradasPista,ArrayList<Entrada> listaEntradasGrada) {
         Scanner tecladoLetras = new Scanner(System.in);
         Scanner tecladoNumeros = new Scanner(System.in);
 
@@ -52,20 +52,29 @@ public class Main {
 
         String entradaGenerada;
         String entradaRegex = "VIP|PISTA|GRADA";
+        String zonaGrada = null;
+        String zonaGradaRegex = "ESTE|SUR|OESTE";
 
         do {
             System.out.println("Que tipo de entrada quieres comprar?: ");
-            entradaGenerada= tecladoLetras.nextLine().toUpperCase();
+            entradaGenerada = tecladoLetras.nextLine().toUpperCase();
 
 
             do {
                 System.out.println("Cuantas entradas quieres comprar?: ");
-                numeroEntradas= tecladoNumeros.nextInt();
+                numeroEntradas = tecladoNumeros.nextInt();
+                
+                if (entradaGenerada.equals("GRADA")) {
+                    do {
+                        System.out.println("Que zona de la grada quieres?(ESTE,SUR,OESTE): ");
+                        zonaGrada = tecladoLetras.nextLine().toUpperCase();
+                    } while (Pattern.matches(zonaGrada, zonaGradaRegex));
+                }
 
-                double total = numeroEntradas * Vip.calculaPrecio();
-                System.out.println("El precio total serían: " + total);
+                //Función que calcula el precio total de las entradas en base al tipo de entrada y el número de ellas.
+                calculaPrecioEntradas(entradaGenerada,numeroEntradas);
 
-            }while (numeroEntradas>20);
+            } while (numeroEntradas > 20);
 
             String correo = introducirCorreo();
 
@@ -74,7 +83,7 @@ public class Main {
             }
             switch (entradaGenerada) {
                 case "VIP":
-                    for (int i=0;i< numeroEntradas;i++){ //Bucle que itera tantas veces como entradas se requieran
+                    for (int i = 0; i < numeroEntradas; i++) { //Bucle que itera tantas veces como entradas se requieran
                         Entrada entradaAux = listaEntradasVip.get(0); //Creamos una entrada auxiliar que coge la entrada de la listaVip en la posicion 0.
                         listaEntradasVendidas.add(entradaAux); //Añadimos la entradaAuxiliar a la lista de entradas vendidas.
                         listaEntradasVip.remove(entradaAux); //Quitamos la entrada de la lista de entradas Vip, para no volver a asignarla
@@ -85,20 +94,67 @@ public class Main {
 
                     System.out.println("Vendidas");
                     System.out.println(listaEntradasVendidas); //Mostramos las entradas vendidas
-                    System.out.println("Quedan: "+ listaEntradasVip.size() + "entradas vip.");
+                    System.out.println("Quedan: " + listaEntradasVip.size() + " entradas vip.");
                     break;
                 case "PISTA":
-                    for (int i=0;i<numeroEntradas;i++){
-                        Entrada entradaAux = listaEntradas.get(0);
+                    for (int i = 0; i < numeroEntradas; i++) {
+                        Entrada entradaAux = listaEntradasPista.get(0);
                         listaEntradasVendidas.add(entradaAux);
                         listaEntradasVip.remove(entradaAux);
+                        entradaAux.setEstaVendida();
+                        entradaAux.setCorreo(correo);
+                        entradaAux.setFechaHoraCompra();
                     }
+                    System.out.println("Vendidas");
+                    System.out.println(listaEntradasVendidas); //Mostramos las entradas vendidas
+                    System.out.println("Quedan: " + listaEntradasPista.size() + " entradas de pista.");
                     break;
                 case "GRADA":
+                    
+                        switch (zonaGrada) {
+                            case "ESTE":
+                                for (int i = 0; i < numeroEntradas; i++){
+                                    Entrada entradaAux = listaEntradasGrada.get(0);
+                                    listaEntradasVendidas.add(entradaAux);
+                                    listaEntradasGrada.remove(entradaAux);
+                                    entradaAux.setEstaVendida();
+                                    entradaAux.setCorreo(correo);
+                                    entradaAux.setFechaHoraCompra();
+                                }
+                                System.out.println("Vendidas");
+                                System.out.println(listaEntradasVendidas); //Mostramos las entradas vendidas
+                                System.out.println("Quedan: " + listaEntradasGrada.size() + " entradas de grada."); //Añadir lista que especifique en que zona de la grada esta cada entrada y una lista grada general que recoja todas las zonas de la grada.
+                                break;
+                            case "OESTE":
+                                for (int i = 0; i < numeroEntradas; i++){
+                                    Entrada entradaAux = listaEntradasGrada.get(0);
+                                    listaEntradasVendidas.add(entradaAux);
+                                    listaEntradasGrada.remove(entradaAux);
+                                    entradaAux.setEstaVendida();
+                                    entradaAux.setCorreo(correo);
+                                    entradaAux.setFechaHoraCompra();
+                                }
+                                System.out.println("Vendidas");
+                                System.out.println(listaEntradasVendidas); //Mostramos las entradas vendidas
+                                System.out.println("Quedan: " + listaEntradasGrada.size() + " entradas de grada.");
+                                break;
+                            case "SUR":
+                                for (int i = 0; i < numeroEntradas; i++){
+                                    Entrada entradaAux = listaEntradasGrada.get(0);
+                                    listaEntradasVendidas.add(entradaAux);
+                                    listaEntradasGrada.remove(entradaAux);
+                                    entradaAux.setEstaVendida();
+                                    entradaAux.setCorreo(correo);
+                                    entradaAux.setFechaHoraCompra();
+                                }
+                                System.out.println("Vendidas");
+                                System.out.println(listaEntradasVendidas); //Mostramos las entradas vendidas
+                                System.out.println("Quedan: " + listaEntradasGrada.size() + " entradas de grada.");
+                                break;
+                        }
+                        break;
+                    
 
-
-
-                    break;
             }
         }while (!Pattern.matches(entradaRegex, entradaGenerada));
     }
@@ -112,5 +168,18 @@ public class Main {
             correo = teclado.nextLine().toLowerCase();
         //}while (!Pattern.matches(correo,correoRegex));
         return correo;
+    }
+    public static void calculaPrecioEntradas(String entradaGenerada, double numeroEntradas) {
+        double total;
+
+        if (entradaGenerada.equals("VIP")) {
+            total = numeroEntradas * Vip.calculaPrecio();
+
+        } else if (entradaGenerada.equals("GRADA")) {
+            total = numeroEntradas * Grada.calculaPrecio();
+        }else {
+            total = numeroEntradas * Pista.calculaPrecio();
+        }
+        System.out.println("El precio total serían: " + total);
     }
 }

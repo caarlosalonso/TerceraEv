@@ -2,7 +2,7 @@ import java.time.LocalDateTime;
 
 public class Grada extends Entrada{
     //Atributos
-    final String ZONA="";
+    //final String ZONA;
     final int ASIENTO=0;
     static final Double SUPLEMENTO=10.00;
     static final int LIMITE_ESTE=2000;
@@ -12,5 +12,7 @@ public class Grada extends Entrada{
     //Metodos
     public Grada() {
         super("GRADA");
+        //this.ZONA = ZONA;
     }
+    public static double calculaPrecio() {return Entrada.calculaPrecio() + SUPLEMENTO;}
 }
