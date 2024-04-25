@@ -58,7 +58,6 @@ public class Main {
             entradaGenerada= tecladoLetras.nextLine().toUpperCase();
 
 
-
             do {
                 System.out.println("Cuantas entradas quieres comprar?: ");
                 numeroEntradas= tecladoNumeros.nextInt();
