@@ -21,10 +21,10 @@ public class Entrada {
         this.TIPO_ENTRADA = TIPO_ENTRADA;
     }
 
+
     @Override
     public String toString() {
-        return "*****************************" + "\n" +
-                "Entrada: \n" +
+        return  "**********Entrada**********: \n" +
                 "CodigoEntrada= " + CODIGO_ENTRADA + "\n" +
                 "Grupo= " + Entrada.GRUPO + "\n" +
                 "Precio = " + Entrada.PRECIO_ENTRADA + "\n" +
@@ -32,12 +32,11 @@ public class Entrada {
                 "fechaHoraInicio= " + Entrada.fechaHoraInicio + "\n" +
                 "fechaHoraCompra= " + fechaHoraCompra + "\n" +
                 "correo= " + correo + "\n" +
-                "TipoEntrada= " + TIPO_ENTRADA + "\n" +
-                "*****************************";
+                "TipoEntrada= " + TIPO_ENTRADA + "\n" ;
     }
 
     public static double calculaPrecio(){
-        return contadorEntrada*PRECIO_ENTRADA;
+        return PRECIO_ENTRADA;
     }
     public static String generarCodigo(){
         String finalStr = String.format("%05d",contadorEntrada);

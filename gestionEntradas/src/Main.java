@@ -21,7 +21,6 @@ public class Main {
                         Entrada entrada = new Vip();
                         listaEntradas.add(entrada);
                         listaEntradasVip.add(entrada);
-                        System.out.println(entrada);
                     }
                     for (int i = 0; i < Pista.LIMITE_PISTA; i++) {
                         Entrada entrada = new Pista();
@@ -44,37 +43,13 @@ public class Main {
                         listaEntradasGrada.add(entrada);
                     }
     }
-    /*
-    public static void comprarEntradas(ArrayList<Entrada> listaEntradas,ArrayList<Entrada> listaEntradasVendidas){
 
-        Scanner tecladoNumeros = new Scanner(System.in);
-
-        System.out.println("Cuantas entradas quieres comprar?: ");
-        int numeroEntradas = tecladoNumeros.nextInt();
-
-        for (int i=0;i< numeroEntradas;i++){
-            Entrada entradaAux = listaEntradas.get(0);
-
-            listaEntradasVendidas.add(entradaAux);
-            listaEntradas.remove(entradaAux);
-            entradaAux.setEstaVendida();
-            entradaAux.setCorreo("lkjkjk");
-            entradaAux.setFechaHoraCompra();
-        }
-
-
-        System.out.println("Disponibles");
-        System.out.println(listaEntradas);
-        System.out.println("Vendidas");
-        System.out.println(listaEntradasVendidas);
-
-        //System.out.println(Entrada.calculaPrecio(numeroEntradas));
-        double total = numeroEntradas * Entrada.calculaPrecio();
-    }
-     */
     public static void comprarEntradas(ArrayList<Entrada> listaEntradas,ArrayList<Entrada> listaEntradasVendidas,ArrayList<Entrada> listaEntradasVip,ArrayList<Entrada> listaEntradasPista,ArrayList<Entrada> listaEntradasGrada){
         Scanner tecladoLetras = new Scanner(System.in);
         Scanner tecladoNumeros = new Scanner(System.in);
+
+        int numeroEntradas;
+
 
         String entradaGenerada;
         String entradaRegex = "VIP|PISTA|GRADA";
@@ -84,24 +59,28 @@ public class Main {
             entradaGenerada= tecladoLetras.nextLine().toUpperCase();
 
             System.out.println("Cuantas entradas quieres comprar?: ");
-            int numeroEntradas = tecladoNumeros.nextInt();
+            numeroEntradas = tecladoNumeros.nextInt();
 
             if (!Pattern.matches(entradaRegex, entradaGenerada)) {
                 System.out.println("Tipo de entrada NO VALIDO!");
             }
             switch (entradaGenerada) {
                 case "VIP":
-                    for (int i=0;i< numeroEntradas;i++){ //Bucle que itera tantas veces como entradas se requieran
-                        Entrada entradaAux = listaEntradasVip.get(0); //Creamos una entrada auxiliar que coge la entrada de la listaVip en la posicion 0.
+                    for (int i = 0; i < numeroEntradas; i++) { //Bucle que itera tantas veces como entradas se requieran
+                        Entrada entradaAux = listaEntradasVip.get(0);
                         listaEntradasVendidas.add(entradaAux); //Añadimos la entradaAuxiliar a la lista de entradas vendidas.
                         listaEntradasVip.remove(entradaAux); //Quitamos la entrada de la lista de entradas Vip, para no volver a asignarla
                         entradaAux.setEstaVendida(); //Marcamos al entrada como vendida con un booleano
-                        entradaAux.setCorreo(introducirCorreo()); //Añadimos el correo al que se va a enviar la entrada
                         entradaAux.setFechaHoraCompra(); //Añadimos tambien la fecha de compra de la entrada.
 
-                        System.out.println("Vendidas");
-                        System.out.println(listaEntradasVendidas);
+                        entradaAux.setCorreo(introducirCorreo()); //Añadimos el correo al que se va a enviar la entrada
                     }
+
+                    System.out.println("Vendidas: ");
+                    System.out.println(listaEntradasVendidas);
+
+                    double total = numeroEntradas * Vip.calculaPrecio();
+                    System.out.println("Precio total: " + total);
                     break;
                 case "PISTA":
 
@@ -109,10 +88,9 @@ public class Main {
                 case "GRADA":
 
 
-
                     break;
             }
-        }while (!Pattern.matches(entradaRegex, entradaGenerada));
+        }while (!Pattern.matches(entradaRegex, entradaGenerada) || numeroEntradas>20);
     }
     public static String introducirCorreo(){
         Scanner teclado = new Scanner(System.in);
