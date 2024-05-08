@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/intefaces/intefaces.iml" filepath="$PROJECT_DIR$/intefaces/intefaces.iml" />
       <module fileurl="file://$PROJECT_DIR$/listas/listas.iml" filepath="$PROJECT_DIR$/listas/listas.iml" />
       <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tipoColecciones/tipoColecciones.iml" filepath="$PROJECT_DIR$/tipoColecciones/tipoColecciones.iml" />
     </modules>
   </component>
 </project>
