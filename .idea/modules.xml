@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/SetvsList/SetvsList.iml" filepath="$PROJECT_DIR$/SetvsList/SetvsList.iml" />
       <module fileurl="file://$PROJECT_DIR$/TerceraEv.iml" filepath="$PROJECT_DIR$/TerceraEv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UmbrellaErrores/UmbrellaErrores.iml" filepath="$PROJECT_DIR$/UmbrellaErrores/UmbrellaErrores.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Vehiculos/Vehiculos.iml" filepath="$PROJECT_DIR$/Vehiculos/Vehiculos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/correcionMiguel/correcionMiguel.iml" filepath="$PROJECT_DIR$/correcionMiguel/correcionMiguel.iml" />
       <module fileurl="file://$PROJECT_DIR$/dni/dni.iml" filepath="$PROJECT_DIR$/dni/dni.iml" />
       <module fileurl="file://$PROJECT_DIR$/gestionAmigos/gestionAmigos.iml" filepath="$PROJECT_DIR$/gestionAmigos/gestionAmigos.iml" />
       <module fileurl="file://$PROJECT_DIR$/gestionEntradas/gestionEntradas.iml" filepath="$PROJECT_DIR$/gestionEntradas/gestionEntradas.iml" />

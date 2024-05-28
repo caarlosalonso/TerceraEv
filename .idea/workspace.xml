@@ -4,18 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37ac1d2a-a82e-46aa-96b0-55ff628b3cd7" name="Changes" comment="25/04/2024 LT">
-      <change afterPath="$PROJECT_DIR$/tipoColecciones/src/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tipoColecciones/src/Pila.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tipoColecciones/src/PilaMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tipoColecciones/tipoColecciones.iml" afterDir="false" />
+    <list default="true" id="37ac1d2a-a82e-46aa-96b0-55ff628b3cd7" name="Changes" comment="08/05/2024 LT colecciones">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SetvsList/SetvsList.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UmbrellaErrores/UmbrellaErrores.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UmbrellaErrores/src/Empleado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UmbrellaErrores/src/EmpleadoFunciones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UmbrellaErrores/src/EmpleadoMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UmbrellaErrores/src/MenorEdadException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vehiculos/Vehiculos.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vehiculos/src/VehiculoMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vehiculos/src/Vehiculos/Avion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vehiculos/src/Vehiculos/VehiculoTransporte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/correcionMiguel/correcionMiguel.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/correcionMiguel/src/paqueteExamen/Biblioteca.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/correcionMiguel/src/paqueteExamen/Libro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/correcionMiguel/src/paqueteExamen/Musica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/correcionMiguel/src/paqueteExamen/Pelicula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_04_2024_10_26_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_04_2024_10_26__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_04_2024_19_38_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_04_2024_19_38__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_04_2024_20_16_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_04_2024_20_16__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_04_2024_20_16__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,20 +51,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/frasq/IdeaProjects/TerceraEv/test/src&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/frasq/IdeaProjects/TerceraEv/tipoColecciones/src/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "22",
+    "last_opened_file_path": "C:/Users/frasq/IdeaProjects",
+    "onboarding.tips.debug.path": "C:/Users/frasq/IdeaProjects/TerceraEv/Vehiculos/src/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\frasq\IdeaProjects\TerceraEv\test\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\frasq\IdeaProjects\TerceraEv\UmbrellaErrores\src" />
+      <recent name="C:\Users\frasq\IdeaProjects\TerceraEv\correcionMiguel\src\paqueteExamen" />
     </key>
   </component>
   <component name="RunManager" selected="Application.EmpleadoMain">
@@ -77,8 +88,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.EmpleadoMain" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713524261038</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="08/05/2024 LT colecciones">
+      <option name="closed" value="true" />
+      <created>1715162029019</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715162029019</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,7 +205,8 @@
     <MESSAGE value="17/04/2024 LT" />
     <MESSAGE value="19/04/2024 LT" />
     <MESSAGE value="19/04/2024 LT myVersion" />
-    <option name="LAST_COMMIT_MESSAGE" value="19/04/2024 LT myVersion" />
+    <MESSAGE value="08/05/2024 LT colecciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="08/05/2024 LT colecciones" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -195,6 +215,16 @@
           <url>file://$PROJECT_DIR$/gestionAmigos/src/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/SetvsList/src/Main.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/UmbrellaErrores/src/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
